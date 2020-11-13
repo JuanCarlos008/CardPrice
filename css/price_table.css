@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(45deg, #239ec4, #2abd6c);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .container-table{
+    display: flex;
+}
+
+.container .container-table .box-price{
+    text-align: center;
+    margin: 20px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0,0,0,.5), 0 15px 15px 5px rgba(0,0,0,.3);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.container .container-table .box-price.basic:hover{
+    transform: scale(1.1);
+}
+
+.container .container-table .box-price.advance:hover{
+    transform: scale(1.1);
+}
+
+.container .container-table .box-price.premium:hover{
+    transform: scale(1.1);
+}
+
+.container-table .box-price .price-header{
+    padding: 50px;
+    background: linear-gradient(45deg, #239ec4, #2abd6c);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.container-table .box-price .price-header h4{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.container-table .box-price .price-header h2{
+    color: #fff;
+    padding: 20px 0 0;
+    font-size: 36px;
+}
+
+.container-table .box-price .price-content ul{
+    position: relative;
+    padding: 20px 0;
+}
+
+.container-table .box-price .price-content ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 0;
+    color: #777;
+    cursor: pointer;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transition: .5s;
+}
+
+.container-table .box-price .price-content ul li:hover{
+    border-left: 15px solid #239ec4;
+    border-right: 15px solid #239ec4;
+    color: #2abd6c;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.container-table .box-price .button-buy{
+    padding: 0 0 30px;
+}
+
+.container-table .box-price .button-buy a{
+    padding: 10px 40px;
+    color: #fff;
+    background: linear-gradient(45deg, #239ec4, #2abd6c);
+    border-radius: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
